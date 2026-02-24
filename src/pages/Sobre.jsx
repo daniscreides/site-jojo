@@ -69,7 +69,10 @@ export default function Sobre() {
               <img src={github} alt="GitHub" />
             </a>
 
-            <a href="mailto:danielisouza436@gmail.com">
+            <a href="mailto:danielisouza436@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img src={gmail} alt="Email" />
             </a>
           </div>
