@@ -1,0 +1,148 @@
+.jojo-card-component-container {
+  width: auto;
+  height: auto;
+  background-color: var(--cor-card);
+  border-radius: 16px;
+  border: 2px solid var(--cor-borda);
+  box-shadow: 0 12px 28px var(--cor-sombra);
+  display: flex;
+  flex-direction: column;
+  overflow: visible;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.jojo-card-component-imagem {
+  width: 260px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+}
+
+.jojo-card-component-imagem img {
+  width: 260px;
+  height: auto;
+  border-radius: 14px 14px 0 0;
+  object-fit: contain;
+}
+
+.jojo-card-component-placeholder {
+  color: var(--cor-texto);
+  font-size: 14px;
+  opacity: 0.6;
+}
+
+.jojo-card-component-info {
+  height: 100px;
+  padding: 4px;
+  background-color: var(--cor-card);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  border-radius: 0 0 14px 14px;
+}
+
+.jojo-card-component-info a {
+  text-decoration: none;
+}
+
+.jojo-card-component-info h3 {
+  font-size: 18px;
+  color: var(--cor-borda);
+}
+
+.jojo-card-component-info p {
+  font-size: 14px;
+  margin-bottom: 4px;
+  opacity: 0.8;
+}
+
+.jojo-card-component-botao {
+  margin: 6px 0 4px 0;
+  padding: 6px 10px;
+  font-family: var(--font-texto);
+  font-weight: bold;
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: #1A1026;
+  background: linear-gradient(
+    135deg,
+    var(--cor-btn-top),
+    var(--cor-btn-top-hover)
+  );
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow:
+    0 6px 15px var(--cor-sombra),
+    inset 0 0 0 2px var(--cor-borda);
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    filter 0.25s ease;
+}
+
+.jojo-card-component-botao:hover {
+  transform: translateY(-3px) scale(1.05);
+  filter: brightness(1.1);
+  box-shadow:
+    0 10px 25px var(--cor-sombra),
+    inset 0 0 0 2px var(--cor-btn-top-hover);
+}
+
+.jojo-card-component-botao:active {
+  transform: scale(0.97);
+  box-shadow:
+    0 4px 10px var(--cor-sombra),
+    inset 0 0 0 2px var(--cor-borda);
+}
+
+@media (max-width: 900px) {
+
+  .jojo-card-component-container {
+  border-radius: 10px;
+  height: 290px;
+  border: 1px solid var(--cor-borda);
+}
+
+.jojo-card-component-imagem {
+  width: 165px;
+  height: auto;
+}
+
+.jojo-card-component-imagem img {
+  width: 165px;
+  height: auto;
+  border-radius: 8px 8px 0 0;
+  object-fit: fill;
+}
+
+.jojo-card-component-info {
+  height: 65px;
+  padding: 0 2px;
+  background-color: var(--cor-card);
+  border-radius: 0 0 10px 10px;
+}
+
+.jojo-card-component-info h3 {
+  font-size: 11px;
+}
+
+.jojo-card-component-info p {
+  font-size: 8px;
+  margin-bottom: 0;
+}
+
+.jojo-card-component-botao {
+  margin: 0;
+  padding: 3px 6px;
+  font-size: 7px;
+  border-radius: 6px;
+}
+
+}

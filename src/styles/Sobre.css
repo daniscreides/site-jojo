@@ -1,0 +1,142 @@
+.sobre-page {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+  padding: 150px 20px 80px;
+  box-sizing: border-box;
+}
+
+.sobre-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: var(--cor-card);
+  border-radius: 16px;
+  border: 2px solid var(--cor-borda);
+  box-shadow: 0 12px 30px var(--cor-sombra);
+  padding: 30px;
+}
+
+.sobre-container h1 {
+  font-family: var(--font-titulo);
+  color: var(--cor-borda);
+  text-shadow: 0 4px 10px var(--cor-sombra);
+  text-align: center;
+  letter-spacing: 6px;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.sobre-container p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 16px;
+  color: var(--cor-texto);
+  text-align: justify;
+}
+
+.sobre-link {
+  color: var(--cor-borda);
+  font-weight: bold;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.25s ease;
+}
+
+.sobre-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0;
+  height: 2px;
+  background-color: var(--cor-borda);
+  transition: width 0.25s ease;
+}
+
+.sobre-link:hover {
+  color: #e0b85c;
+}
+
+.sobre-link:hover::after {
+  width: 100%;
+}
+
+.sobre-social {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.creditos-sobre p {
+  font-size: 20px;
+  color: var(--cor-texto);
+  text-align: center;
+  margin-bottom: 6px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.social-icons a img {
+  width: 50px;
+  height: 50px;
+  transition: transform 0.25s ease, filter 0.25s ease;
+  cursor: pointer;
+}
+
+.social-icons a img:hover {
+  transform: scale(1.15);
+  filter: drop-shadow(0 0 6px var(--cor-borda));
+}
+
+@media (max-width: 900px) {
+
+  .sobre-page {
+    padding: 80px 0 20px 0;
+  }
+
+  .sobre-container {
+    max-width: 350px;
+    border-radius: 12px;
+    border: 1px solid var(--cor-borda);
+    padding: 10px;
+  }
+
+  .sobre-container h1 {
+    letter-spacing: 4px;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .sobre-container p {
+    font-size: 11px;
+    line-height: 1.2;
+    margin-bottom: 10px;
+  }
+
+  .sobre-social {
+    margin-top: 20px;
+  }
+
+  .creditos-sobre p {
+    font-size: 13px;
+    margin-bottom: 4px;
+  }
+
+  .social-icons {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+  }
+
+  .social-icons a img {
+    width: 30px;
+    height: 30px;
+  }
+
+}
